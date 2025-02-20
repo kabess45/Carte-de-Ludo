@@ -64,7 +64,7 @@ body {
 .qr-code img {
     width: 120px; /* Ajustez la taille selon vos besoins */
     height: 120px; /* Assurez-vous que la hauteur est égale à la largeur pour un carré parfait */
-    border-radius: 15px; /* Ajoutez un léger arrondi aux coins */
+    border-radius: 0; /* Supprimez l'arrondi des coins pour un carré parfait */
     border: 3px solid #fff; /* Ajoutez une bordure blanche */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ajoutez une ombre pour l'effet de bulle */
 }
