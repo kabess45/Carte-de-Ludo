@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+}
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+}
+.card h1 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+.card p {
+    color: #ddd;
+    font-size: 18px;
+}
+.icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s; /* Transition douce pour l'effet de transformation */
+}
+.icons a:hover img {
+    transform: scale(1.15); /* Agrandir l'image de 115% au survol */
+}
+.icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query pour les écrans de haute résolution */
+@media (min-width: 1920px) {
+    .card {
+        width: 400px; /* Augmenter la largeur pour les résolutions plus élevées */
+    }
+    .card img {
+        width: 150px;
+        height: 150px;
+        top: -75px; /* Ajuster pour la nouvelle taille de l'image */
+    }
+    .card h1 {
+        margin: 90px 0 15px; /* Ajuster la marge pour tenir compte de l'image plus grande */
+        font-size: 28px;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
