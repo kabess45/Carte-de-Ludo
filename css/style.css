@@ -1,92 +1,54 @@
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    height: 100vh;
     background: linear-gradient(135deg, #1f1c2c, #928dab);
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%; /* Ajouté pour occuper toute la largeur */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.1);
+.carte {
+    width: 90%;
+    max-width: 350px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    width: 100%; /* Assurez-vous que la carte occupe toute la largeur disponible */
-    max-width: 1200px; /* Vous pouvez ajuster cette valeur selon vos besoins */
-    margin: 0 auto; /* Centrer la carte horizontalement */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.card img {
-    border-radius: 50%;
+.photo-profil {
     width: 120px;
     height: 120px;
-    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00b7ff;
 }
 
-.card h1 {
-    margin: 15px 0;
-    font-size: 24px;
+.icones {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.card p {
-    color: #ddd;
-    font-size: 18px;
-}
-
-.icons {
-    margin-bottom: 20px; /* Ajustez la valeur selon vos besoins */
-}
-
-.icons a {
-    margin: 0 15px;
+.icones a {
     text-decoration: none;
-    color: #fff;
-    transition: transform 0.3s; /* Transition douce pour l'effet de transformation */
+    color: #00b7ff;
+    font-size: 30px;
+    transition: transform 0.3s;
+    margin: 0 10px; /* Ajout de marge autour des icônes */
 }
 
-.icons a:hover img {
-    transform: scale(1.15); /* Agrandir l'image de 115% au survol */
+.icones a:hover {
+    transform: scale(1.2);
 }
 
-.icons img {
-    width: 30px;
-    height: 30px;
-}
-
-.qr-code img {
-    width: 120px; /* Ajustez la taille selon vos besoins */
-    height: 120px; /* Assurez-vous que la hauteur est égale à la largeur pour un carré parfait */
-    border-radius: 0; /* Supprimez l'arrondi des coins pour un carré parfait */
-    border: 3px solid #fff; /* Ajoutez une bordure blanche */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ajoutez une ombre pour l'effet de bulle */
-}
-
-/* Media query pour les écrans de haute résolution */
-@media (min-width: 1920px) {
-    .card {
-        width: 400px; /* Augmenter la largeur pour les résolutions plus élevées */
-    }
-    .card img {
-        width: 150px;
-        height: 150px;
-    }
-    .card h1 {
-        margin: 90px 0 15px; /* Ajuster la marge pour tenir compte de l'image plus grande */
-        font-size: 28px;
-    }
-    .card p {
-        font-size: 20px;
-    }
-    .icons img {
-        width: 35px;
-        height: 35px;
-    }
+.qr-code {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 3px solid #00b7ff;
 }
