@@ -51,4 +51,5 @@ body {
     height: 120px;
     margin: 0 auto;
     border: 3px solid #00b7ff;
+    display: block; /* Assurez-vous que l'image est affichée en tant que bloc */
 }
